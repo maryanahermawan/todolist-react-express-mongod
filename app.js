@@ -11,8 +11,10 @@ const toDosRouter = require('./routes/toDos');
 
 const app = express();
 
-//const DB_USER='127.0.0.1';
-mongoose.connect(`mongodb://127.0.0.1:27017`);
+const DB_USER = 'maryana';
+const DB_PASSWORD = 'logic10';
+mongoose.connect(`mongodb://${DB_USER}:${DB_PASSWORD}@ds121345.mlab.com:21345/maryana`);
+//mongoose.connect(`mongodb://127.0.0.1:27017`);
 //express is like middleware(stack of function) to parse the request
 //middleware: logger, express.json, etc
 // view engine setup

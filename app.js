@@ -29,7 +29,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Serve static files from the React app
-app.use(express.static(path.join(__dirname, '../client/build')));
+app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/', routes);
 app.use('/toDos', toDosRouter);
@@ -56,7 +56,7 @@ if (app.get('env') === 'development') {
 }
 
 app.get('*', (req, res) => {
-    res.sendFile(path.join(__dirname+'/../client/build/index.html'));
+    res.sendFile(path.join(__dirname+'/client/build/index.html'));
   });
 
 // production error handler

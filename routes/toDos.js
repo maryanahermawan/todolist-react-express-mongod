@@ -27,11 +27,13 @@ async function addTodos (req, res) {
     }
   }
   */
-  const { todos, isDone } = req.body.todo;
+  const { todos, isDone, dateAdded, category} = req.body.todo;
   //toDos.push(newTodo);
   const todo = new Todo ({
       todos,
       isDone,
+      dateAdded,
+      category
   });
   await todo.save();
 }
@@ -45,8 +47,7 @@ todosRouter.put ('/', updateIsDone);
 async function updateIsDone (req, res) {
   const todo = await Todo.findOneAndUpdate(
     {todos: req.body.todo.todos},
-    {isDone: req.body.todo.isDone},
-    {returnNewDocument: true}
+    {isDone: req.body.todo.isDone}
   )
   await todo.save();
 }

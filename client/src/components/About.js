@@ -18,9 +18,10 @@ export class About extends React.Component {
             return <p>Loading...</p>
         }
         return (            
-            <div>              
+            <div>  
+                <h1>About Me</h1>            
                 <img src={this.state.imageSrc} alt="Google the golden retriever..."/>
-                <p>Hello! My name is Maryana. I live in Bishan and work in electronics chip company as mixed-signal engineer.
+                <p>Hello! My name is Maryana. I live in Bishan and work in one of the electronics chip companies as logic design engineer.
                     I studied Electrical Engineering in NUS. In my free time, I join a cause for the homeless in Singapore.
                     I am also one of the catechists for the teenagers in my Church.
                     In my office, I offer service to my department of 45 people to rinse our plastic containers & dispose them in the recycling bin because I care for our Mother Earth.

@@ -9,6 +9,12 @@ const TodoSchema = new mongoose.Schema(
         isDone: {
             type: Boolean,
         },
+        dateAdded: {
+            type: String,
+        },
+        category: {
+            type: String,
+        }
     }
 );
 
@@ -17,6 +23,8 @@ TodoSchema.methods.toJSON = function() {
         id: this._id,
         todos: this.todos,
         isDone: this.isDone,
+        dateAdded: this.dateAdded,
+        category: this.category,
     };
 };
 

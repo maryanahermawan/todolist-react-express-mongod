@@ -2,7 +2,7 @@ body {
 	align-items: center;
 	background: white;
 	font-family: Arial;
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	justify-content: center;
 	color: royalblue;
 }
@@ -17,11 +17,9 @@ span {
 	display: inline-block;
 }
 .todoElement {
-	width: 95%;
-	margin-top: 30px;
-	margin-bottom: 30px;
-	box-shadow: 1px 1px 1px 1px lightblue;
-	padding: 10px 5px 10px 5px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 5px 5px 5px 5px;
 	text-align: left;
 }
 .NavItem {
@@ -32,6 +30,7 @@ span {
 	padding-top:15px;
 	padding-left:15px;
 	padding-right:15px;
+	color: royalblue;
 }
 .NavItem:hover {
 	background: lightblue;
@@ -42,7 +41,7 @@ span {
 	height: 45px;
 	font-size: 2rem;
 	padding-top:15px;
-	color: red;
+	color:red;
 }
 
 .TabClass {
@@ -63,14 +62,20 @@ span {
 }
 
 input, button {
-	font-size: 1.5rem;
+	font-size: 1rem;
 	border: 0;
 }
 
 h1 {
-	margin: 30px;
+	margin: 40px;
 	background: white;
 	font-size: 2rem;
+	font-family: Georgia;
+}
+h2 {
+	margin: 30px;
+	background: white;
+	font-size: 1.5rem;
 }
 
 ul {
@@ -92,6 +97,8 @@ ul li.complete {
 	text-decoration: line-through;
 }
 img {
+	margin-top:30px;
+	margin-bottom:30px;
 	width: 50%;
 	margin-left: auto;
 	margin-right: auto;
@@ -162,4 +169,63 @@ p {
     -ms-transform: rotate(45deg);
 	transform: rotate(45deg);
 	text-decoration: line-through;
+}
+.dateOnly {
+	font-size: 0.8rem;
+}
+.styled-select {
+	font-size: 1rem;
+	background: lightblue;
+	width:130px;
+	display: block;
+	margin-top: 1rem;
+	margin-left: 30px;
+}
+.inputTodo {
+	width: 95%;
+	margin-top: 30px;
+	margin-bottom: 120px;
+	padding: 10px 5px 10px 5px;
+	text-align: left;
+}
+
+.workClass {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 1px 1px darkblue;
+	padding: 5px 5px 5px 5px;
+	color: darkblue;
+}
+.learningClass {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 1px 1px seagreen;
+	padding: 5px 5px 5px 5px;
+	color: seagreen;
+}
+.volnClass {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 1px 1px darkmagenta;
+	padding: 5px 5px 5px 5px;
+	color: darkmagenta;
+}
+.relnClass {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 1px 1px indigo;
+	padding: 5px 5px 5px 5px;
+	color:indigo;
+}
+.groceriesClass {
+	width: 95%;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	box-shadow: 1px 1px 1px 1px navy;
+	padding: 5px 5px 5px 5px;
+	color: navy;
 }

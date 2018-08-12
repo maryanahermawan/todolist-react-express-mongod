@@ -22,7 +22,7 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:3001",
+  "proxy": "https://maryana-todo-web.herokuapp.com/",
   "engines": {
     "node": "8.11.3",
     "npm": "6.2.0"

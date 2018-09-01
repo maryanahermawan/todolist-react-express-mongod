@@ -32,7 +32,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'client/build')));
 
 app.use('/', routes);
-app.use('/toDos', toDosRouter);
+app.use('/todos', toDosRouter);
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {

@@ -6,3 +6,5 @@
 - `cd react-todo-list`
 - `npm install`
 
+### Git commands 
+- git remote -v to see remote urls
